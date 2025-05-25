@@ -32,7 +32,7 @@ With rising demand and fluctuating market conditions, predicting house prices ac
   - For imputation, KNN imputation was done for numerical features, and the mode for categorical features
   - For categorical features, there were instances where some values appeared on the training dataset but not on the test dataset or vice-versa. One strategy used to address this is to concatenate the train and test datasets on top of each other and then proceed with encoding them to capture all possible values. However, this risks potential data leakage, so instead, categorical values were consolidated based on a numerical threshold
   - Some categorical features also had high cardinality (i.e. many unique values), so similarly, consolidation was done
-  - For outliers in SalePrice, winsorizing (aka clipping or "capping out") the top 1% of observations helped reduce their influence and thereby improving the model's predective power, with before and after distributions shown below:
+  - For outliers in SalePrice, winsorizing the top 1% of observations helped reduce their influence and thereby improving the model's predective power, with before and after distributions shown below:
     ![alt text](images/winsor_before.png) <br />
     ![alt text](images/winsor_after.png) <br />
     
