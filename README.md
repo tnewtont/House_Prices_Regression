@@ -7,3 +7,5 @@ With rising demand and fluctuating market conditions, predicting house prices ac
 
 ## Results
 - The best-performing on the Kaggle leaderboard was Elastic Net
+
+![alt_text](images/house_regression_results_metrics.png)
