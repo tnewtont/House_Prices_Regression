@@ -39,7 +39,8 @@ With rising demand and fluctuating market conditions, predicting house prices ac
     ![alt text](images/boxcox_before.png)
     ![alt text](images/boxcox_after.png)
 - Extensive feature engineering was done, especially on the numerical features by creating new ones through:
-  - Multiplying them together ("interactive" features), based on which ones correlated with each other the most
+  - Multiplying them together ("interactive" features), especially on ones correlated with each other the most
+    - This helps better capture non-linearity
   - Applying logarithmic transformations to reduce skewness
   - Making new, more-interpretible ones such as simple boolean-valued or obtaining, for example, the house's age by subtracting the year sold by the year built
 -  After feature engineering and encoding, 214 total features were yielded
