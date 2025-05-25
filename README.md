@@ -35,6 +35,7 @@ With rising demand and fluctuating market conditions, predicting house prices ac
   - For outliers in SalePrice, winsorizing (aka clipping or "capping out") the top 1% of observations helped reduce their influence and thereby improving the model's predective power, with the before and after distributions shown below:
     ![alt text](images/winsor_before.png)
     ![alt text](images/winsor_after.png)
+    
   - SalePrice was also Box-Cox transformed to help normalize its distribution, with before and after shown below:
     ![alt text](images/boxcox_before.png)
     ![alt text](images/boxcox_after.png)
