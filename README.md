@@ -8,6 +8,8 @@ With rising demand and fluctuating market conditions, predicting house prices ac
 ## Results
 - The best-performing model on the Kaggle leaderboard was Elastic Net, which yielded a public score of 0.12179
   - More precisely, the public score is the root mean squared error (RMSE) between the logarithm of the predicted value and the logarithm of the observed sales price
+  - The top 10 features are shown below:
+    ![alt text](images/top10_elasticnet.png)
 - Several metrics for both the training and test datasets (from train-test splitting) for several other models include:
   - The number of features utilized in the model, n_features
   - Root Mean Squared Error (RMSE)
@@ -30,8 +32,12 @@ With rising demand and fluctuating market conditions, predicting house prices ac
   - For imputation, KNN imputation was done for numerical features, and the mode for categorical features
   - For categorical features, there were instances where some values appeared on the training dataset but not on the test dataset or vice-versa. One strategy used to address this is to concatenate the train and test datasets on top of each other and then proceed with encoding them to capture all possible values. However, this risks potential data leakage, so instead, categorical values were consolidated based on a numerical threshold
   - Some categorical features also had high cardinality (i.e. many unique values), so similarly, consolidation was done
-  - For outliers in SalePrice, winsorizing (aka clipping or "capping out") the top 1% of observations helped reduce their influence and thereby improving the model's predective power
-  - SalePrice was also Box-Cox transformed to help normalize its distribution
+  - For outliers in SalePrice, winsorizing (aka clipping or "capping out") the top 1% of observations helped reduce their influence and thereby improving the model's predective power, with the before and after distributions shown below:
+    ![alt text](images/winsor_before.png)
+    ![alt text](images/winsor_after.png)
+  - SalePrice was also Box-Cox transformed to help normalize its distribution, with before and after shown below:
+    ![alt text](images/boxcox_before.png)
+    ![alt text](images/boxcox_after.png)
 - Extensive feature engineering was done, especially on the numerical features by creating new ones through:
   - Multiplying them together ("interactive" features), based on which ones correlated with each other the most
   - Applying logarithmic transformations to reduce skewness
