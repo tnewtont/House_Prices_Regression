@@ -1,4 +1,4 @@
-# House_Prices_Linear_Regression
+# House_Prices_Regression
 ![alt text](https://photos.zillowstatic.com/fp/e1792e342cadb433c8bf8b7b706e1c9c-p_e.jpg)
 
 ## The original dataset can be found here: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
