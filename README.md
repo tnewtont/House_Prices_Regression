@@ -23,10 +23,10 @@ With rising demand and fluctuating market conditions, predicting house prices ac
 
 ## Data Notes
 - The dataset consists of four files, with the last two for reference purposes:
-  - train.csv, the training data with 80 features including the target SalePrice
-  - test.csv, the test data with 79 features without the target
+  - train.csv, the training data that contains 1460 observations with 80 features including the target SalePrice
+  - test.csv, the test data that contains 1459 observations with 79 features without the target
   - data_description.txt, a text file that briefly describes each feature
-  - sample_submission.csv, shows a sample submission for Kaggle leaderboard
+  - sample_submission.csv, shows a sample submission for the Kaggle leaderboard
 - Exploratory data analysis was done on house_prices_EDA.ipynb
 - Data wrangling was done on house_prices_data_wrangling_winsor_top1.ipynb
   - For imputation, KNN imputation was done for numerical features, and the mode for categorical features
