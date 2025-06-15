@@ -19,7 +19,7 @@ With rising demand and fluctuating market conditions, predicting house prices ac
   - R-squared
   - Adjusted R-squared
 ![alt text](images/elasticnet_kaggle_submission.png)
-![alt_text](images/house_regression_results_metrics.png)
+![alt_text](images/house_regression_results_plus_metrics.png)
 
 ## Data Notes
 - The dataset consists of four files, with the last two for reference purposes:
