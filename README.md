@@ -6,7 +6,7 @@
 With rising demand and fluctuating market conditions, predicting house prices accurately remains a critical task for real estate agents, homeowners, and developers. The goal of this project is to build a regression model using the Ames housing dataset to forecast house sale prices based on various property features. This model can help inform pricing strategies, improve property valuation, and support decision-making for buyers and sellers.
 
 ## Results
-- The best-performing model on the Kaggle leaderboard was Elastic Net, which yielded a public score of 0.12179
+- The best-performing model on the Kaggle leaderboard was Elastic Net, which yielded a public score of 0.12179. The model that best captured overall linearity was Lasso, with an adjusted R-squared value of 0.9000.
   - More precisely, the public score is the root mean squared error (RMSE) between the logarithm of the predicted value and the logarithm of the observed sales price
   - The top 10 features are shown below:
     ![alt text](images/top10_elasticnet.png)
